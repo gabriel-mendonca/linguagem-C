@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+ int main()
+{
+      int periodo,total1=0,total2=0;
+      char aluno,curso;
+      float num,num2,media=0;
+      for(int i=1;i<=10;i++)
+      {
+      printf ("digite o nome do aluno\n");
+      scanf ("%s",&aluno);
+      printf ("digite o periodo do aluno\n");
+      scanf ("%d",&periodo);
+      printf ("digite o curso do aluno\n");
+      scanf ("%s",&curso);
+      printf("Digite a nota do primeiro bimestre\n ");
+      scanf("%f",&num);
+      printf("Digite a nota do segundo bimestre\n ");
+      scanf("%f",&num2);
+           total1=total1+num;
+           total2=total2+num2;
+           media =(total1+total2);
+          
+          printf("\nA media é...: %.2f\n",media/2);
+           if(media >= 70)
+           {  
+               printf ( "aluno aprovado\n");
+           }
+            if((media > 40) && (media < 70))
+          {
+           printf("aluno ficou de prova Substitutiva\n");
+          } 
+          else { printf ("aluno reprovado\n");}
+          
+         
+      }
+
+     
+      
+
+     
+}
