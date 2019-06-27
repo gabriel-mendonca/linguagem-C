@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    char candidatos;
+    int idade;
+    char genero; // masculino ou feminino  
+    float peso,media;
+    int i;
+    
+    
+    
+    
+    for (i=0;i < 7;i++){
+        printf("digite o nome do candidato\n");
+        scanf ("%s",&candidatos);
+        printf ("informe sua idade\n");
+        scanf ("%d",&idade);
+        printf ("informe seu genero\n");
+        scanf ("%s",&genero);
+        printf ("informe seu peso\n");
+        scanf ("%f",&peso);
+        
+        media = media + idade;
+        
+       
+      }
+     
+       
+    printf ("a media das idade eh: %.2f\n",media/7);
+       
+       
+       
+       
+    
+    
+        
+        
+    
+    
+    
+    
+
+    return 0;
+}
