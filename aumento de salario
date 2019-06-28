@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float salario = 1000;
+    int ano = 2015;
+    float percentual = 0.015;
+    float novo_salario;
+    novo_salario = salario + salario * percentual;
+    printf ("o salario em 2016 foi de %.2f\n",novo_salario);
+    
+    for(ano=2017;ano<=2019;ano++){
+        percentual= 2 * percentual;
+    novo_salario = salario + salario * percentual;
+    printf ("o salario em %d foi de %.2f\n",ano,novo_salario);
+    }
+
+    return 0;
